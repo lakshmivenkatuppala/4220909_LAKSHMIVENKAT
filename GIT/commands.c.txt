@@ -1,14 +1,29 @@
 git clone
 -----------------------
+git pull
 
 git init
 
 git add .
 
+git diff(changes in modified files b/w working directory & staging)
+
 git commit -m "message"
+
+cat <filename> (displays lines)
+
+git diff --staged (changes in modified files b/w staging & local repository)
+
+git rm <filename>  (deletes the file from staging area & workflow directory)
+
+git rm --cached <filename> (deletes the file only from staging)
+
+git checkout <version> <filename> (to restore the deleted files)
 
 git push
 
 git status
 
 git log
+
+git log -oneliner

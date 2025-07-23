@@ -4,6 +4,12 @@ git pull
 
 git init
 
+touch <filename> (to add new file)
+
+echo "modified <filename>" >> <filename> (modifying files)
+
+.gitignore (to ignore a same format files)
+
 git add .
 
 git diff(changes in modified files b/w working directory & staging)

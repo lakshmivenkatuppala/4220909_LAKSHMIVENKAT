@@ -1,5 +1,5 @@
 git clone
------------------------
+---
 git pull
 
 git init
@@ -13,6 +13,8 @@ echo "modified <filename>" >> <filename> (modifying files)
 git add .
 
 git diff(changes in modified files b/w working directory & staging)
+
+git stash (used to revert the changes made in working directory before commiting)
 
 git commit -m "message"
 
@@ -33,3 +35,16 @@ git status
 git log
 
 git log -oneliner
+
+branches
+
+git branch <branchname>
+
+git checkout <branchname> (used to switch branches)
+
+git diff <branch1> <branch2>
+
+git merge <branchname> (used to merge the branches)
+
+git branch -d <branchname>
+

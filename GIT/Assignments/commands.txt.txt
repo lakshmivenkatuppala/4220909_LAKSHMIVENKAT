@@ -46,5 +46,5 @@ git diff <branch1> <branch2>
 
 git merge <branchname> (used to merge the branches)
 
-git branch -d <branchname>
+git branch -d <branchname> (used to delete the branch)
 

@@ -40,6 +40,8 @@ branches
 
 git branch <branchname>
 
+git branch (list all branches in the git) ----"added in remote repository"
+
 git checkout <branchname> (used to switch branches)
 
 git diff <branch1> <branch2>

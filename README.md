@@ -14,3 +14,9 @@ Linux commands execution history
 <img src="https://github.com/lakshmivenkatuppala/4220909_LAKSHMIVENKAT/blob/main/Linux%20Commands%20(Screen%20Shots)/3.jpg" alt="image">
 
 <img src="https://github.com/lakshmivenkatuppala/4220909_LAKSHMIVENKAT/blob/main/Linux%20Commands%20(Screen%20Shots)/4.jpg" alt="image">
+
+<img src="https://github.com/lakshmivenkatuppala/4220909_LAKSHMIVENKAT/blob/main/Linux%20Commands%20(Screen%20Shots)/5.jpg" alt="image">
+
+<img src="https://github.com/lakshmivenkatuppala/4220909_LAKSHMIVENKAT/blob/main/Linux%20Commands%20(Screen%20Shots)/6.jpg" alt="image">
+
+<img src="https://github.com/lakshmivenkatuppala/4220909_LAKSHMIVENKAT/blob/main/Linux%20Commands%20(Screen%20Shots)/7.jpg" alt="image">

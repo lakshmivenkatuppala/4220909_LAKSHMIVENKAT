@@ -1,0 +1,306 @@
+1  ls
+    2  rm -rf * .??*
+    3  ls
+    4  cd New
+    5  clear
+    6  ls
+    7  cat a.out
+    8  clear
+    9  vi sum.c
+   10  gcc sum.c && ./a.out
+   11  vi filecmd
+   12  cat filecmd
+   13  cat sum.c
+   14  gcc sum.c
+   15  ./a.out
+   16  ls
+   17  more filecmd
+   18  nano filecmd
+   19  more filecmd
+   20  less filecmd
+   21  head filecmd
+   22  head -n 5 filecmd
+   23  tail filecmd
+   24  tail +5 filecmd
+   25  nano sample.txt
+   26  cat sample.txt
+   27  cut -c 1-3 sample.txt
+   28  nano sample.txt
+   29  cut -c 1-3 sample.txt
+   30  cut -c 4-10 sample.txt
+   31  cat sample.txt
+   32  cut -d ':' -f2 sample.txt
+   33  cut -d ':' -f2,3 sample.txt
+   34  ls
+   35  cat demo
+   36  nano demo
+   37  nano f1
+   38  nano f2
+   39  cat f1
+   40  cat f2
+   41  paste f1 f2
+   42  paste -d ':' f1 f2
+   43  paste -s f1 f2
+   44  cat sample.txt
+   45  sort sample.txt
+   46  sort sample.txt -r
+   47  sort -t ':' -k2 sample.txt
+   48  sort -t ':' -k3 sample.txt
+   49  sort -t ':' -k3 sample.txt -r
+   50  cat sample.txt
+   51  tr ':' '|' <sample.txt
+   52  ls
+   53  tr '0' '|$' < sample.txt
+   54  cat sample.txt
+   55  tr -s '0' <sample.txt
+   56  tr -d '0' < sample.txt
+   57  nano example.txt
+   58  cat example.txt
+   59  uniq example.txt
+   60  nano example.txt
+   61  uniq example.txt
+   62  mv example.txt s1.txt
+   63  cat s1.txt
+   64  cmp sample.txt s1.txt
+   65  diff sample.txt s1.txt
+   66  nano test.c
+   67  cat test.c
+   68  grep main test.c
+   69  grep ^main test.c
+   70  grep ^int test.c
+   71  grep \; test.c
+   72  sed '/simple/d' test.c
+   73  nano sed_test
+   74  cat sed_test
+   75  sed 's/Hello/Hi/' sed_test
+   76  sed -i 's/Hello/Hi/' sed_test
+   77  cat sed_test
+   78  sed 's/!/$/g' sed_test
+   79  sed '/Hi/a Welcome to sed' sed_test
+   80  sed -n '/Hi/p' sed_test
+   81  nano employees.txt
+   82  cat employees.txt
+   83  awk '{print $0}' employees.txt
+   84  awk '{print $1,$3}' employees.txt
+   85  awk $3>30000 '{print $1, $3}' employees.txt
+   86  awk $7>30000 '{print $3, $7}' employees.txt
+   87   awk '$7>30000 {print $3, $7}' employees.txt
+   88  awk 'BEGIN {print "Name:. Salary:"}{print $3,$7}' employees.txt
+   89   awk 'BEGIN {print "Name:, Salary:"}{print $3,$7}' employees.txt
+   90   awk 'BEGIN {print "Name Salary"}{print $3,$7}' employees.txt
+   91   awk 'BEGIN {print "Name Age Salary"}{print $3,$5,$7}' employees.txt
+   92  awk '{total+= $7} END {print "Total Salary=", total}' employees.txt
+   93  awk '{print $0}' employees.txt
+   94  nano employees.txt
+   95  awk '{print NR, $1}' employees.txt
+   96  awk '{print NR, $0}' employees.txt
+   97  awk '/Ravali/' employees.txt
+   98  awk '$2 < 21 {print $1, $2}' employees.txt
+   99  awk '{printf "Name: %s, Age: %d, Salary: %d\n", $1, $2, $3}' employees.txt
+  100  awk 'END {print "Total employees= ", NR}' employees.txt
+  101  ls -l
+  102  ls -l s1.txt
+  103  chmod u+x s1.txt
+  104  ls -l s1.txt
+  105  chmod o-r s1.txt
+  106  ls -l s1.txt
+  107  chmod 462 s1.txt
+  108  ls -l s1.txt
+  109  history
+  110  gcc *.c
+  111  gcc main.c sum.c square.c diff.c product.c division.c
+  112  cd Day1
+  113  gcc *.c
+  114  gcc *.c
+  115  clear
+  116  gcc *.c
+  117  gcc *.c
+  118  clear
+  119  gcc main.c
+  120  clear
+  121  gcc main.c
+  122  gcc diff.c
+  123  clear
+  124  gcc main.c
+  125  cat .\demo.h
+  126  cd demo.h
+  127  cd diff.c
+  128  clear
+  129  gcc main.c
+  130  clear
+  131  gcc *.c
+  132  clear
+  133  gcc main.c
+  134  gcc square.c
+  135  clear
+  136  gcc *.c -o program
+  137  clear
+  138  gcc main.c
+  139  clear
+  140  gcc *.c
+  141  gcc main.c diff.c square.c product.c division.c sum.c
+  142  clear
+  143  cat product.c
+  144  cat main.c
+  145  cat product.c
+  146  cat square.c
+  147  cat sum.c
+  148  clear
+  149  gcc main.c
+  150  clear
+  151  gcc demo.h
+  152  rm pr demo.h.gch
+  153  rm -r demo.h.gch
+  154  rm demo.h.gch
+  155  clear
+  156  gcc sum.c diff.c square.c division.c product.c main.c
+  157  ./a.out
+  158  gcc *.c -c
+  159  *-o all.out
+  160  *.o -o all.out
+  161  gcc *.o -o all.out
+  162  ./all.out
+  163  rm -rf*.o *.out
+  164  rm -rf *.o *.out
+  165  clear
+  166  make object.o
+  167  make all.o
+  168  make all
+  169  make run
+  170  make clean
+  171  clear
+  172  make object.o
+  173  make run
+  174  make all
+  175  make clean
+  176  clear
+  177  gcc main.c
+  178  clear
+  179  gcc main.c -c
+  180  gcc main.o -o
+  181  gcc main.o -o all.out
+  182  rm -rf *.o
+  183  clear
+  184  make run
+  185  make object.o
+  186  cd Day1
+  187  clear
+  188  make object.o
+  189  make all
+  190  gcc ./a.out
+  191  make run
+  192  make clean
+  193  sudo apt update
+  194  clear
+  195  cd Day2
+  196  git clone https://github.com/ThrowTheSwitch/Unity.git
+  197  clear
+  198  make object.o
+  199  cd Ex1
+  200  make object.o
+  201  clear
+  202  make object.o
+  203  make all
+  204  make run
+  205  make clean
+  206  clear
+  207  make all
+  208  clear
+  209  make object.o
+  210  clear
+  211  make object.o
+  212  clear
+  213  make object.o
+  214  make all
+  215  make clean
+  216  clear
+  217  make object.o
+  218  make all
+  219  make run
+  220  make clean
+  221  clear
+  222  make object.o
+  223  make all
+  224  make run
+  225  make run
+  226  make clean
+  227  clear
+  228  cd..
+  229  cd
+  230  cd mnt
+  231  cd Method2
+  232  cd Day2
+  233  cd Method2
+  234  make object.o
+  235  make all
+  236  make run
+  237  make run
+  238  make run
+  239  clear
+  240  make clean
+  241  make object.o
+  242  make all
+  243  make run
+  244  makerun
+  245  make run
+  246  make clean
+  247  make clean
+  248  make run
+  249  make clean
+  250  clear
+  251  cd q
+  252  cd \..
+  253  Method3
+  254  cd Method3
+  255  make object.o
+  256  make all
+  257  make run
+  258  make clean
+  259  clear
+  260  echo "Hello World"
+  261  echo 'Helloworld'
+  262  pwd
+  263  cd ~
+  264  cd /mnt/c/WINDOWS/system32$
+  265  cd /mnt/c/WINDOWS/system32
+  266  cd /home
+  267  mkdir lakshmivenkat
+  268  cd lakshmivenkat
+  269  ls
+  270  ls -a
+  271  file a.out
+  272  cd a.out
+  273  cat a.out
+  274  cd *
+  275  nano a.out
+  276  nano employees.txt
+  277  ls
+  278  nano f1
+  279  cat sum.c
+  280  >a.out
+  281  cat a.out
+  282  gcc sum.c -a.out
+  283  gcc sum.c -o a.out
+  284  cat a.out
+  285  gcc sum.c -o my_program
+  286  cat my_program
+  287  cd ~
+  288  sudo apt update
+  289  sudo apt update
+  290  sudo apt install build-essential
+  291  gcc sum.c
+  292  gcc sum.c -o a.out
+  293  nano a.out
+  294  cat a.out
+  295  ./a.out
+  296  ./a.out
+  297  cd~
+  298  cd ~
+  299  gcc sum.c -o a
+  300  ./a > a.out
+  301  ./a.out
+  302  cat a.out
+  303  nano sum.c
+  304  gcc sum.c -o a.out
+  305  ./a.out
+  306  history

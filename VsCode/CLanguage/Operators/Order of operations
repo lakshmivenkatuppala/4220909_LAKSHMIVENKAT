@@ -1,0 +1,8 @@
+()               Parentheses
+*, /, %          Multiplication, Division, Modulus
++, -             Addition, Subtraction
+>, <, >=, <=     Comparison
+==, !=           Equality
+&&               Logical AND
+||               Logical OR
+=                Assignment
